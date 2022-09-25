@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+}
+
+html {
+    font-size: 15px;
+    background-color: #03A6A6;
+    font-family: 'Chainsawz';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Blambot Classic';
+    src: url(Classic.ttf);
+}
+
+@font-face {
+    font-family: 'Pochita';
+    src: url(manga.ttf);
+    line-height: 1;
+    margin: 1px;
+}
+
+@font-face {
+    font-family: 'Chainsawz';
+    src: url(chainsawzbb_reg.ttf);
+
+}
+
+h2,h3,p {
+    color: white;
+    margin: 1px;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5.3rem;
+}
+
+h3 {
+    font-size: 4.7rem;
+}
+
+p {
+    font-size: 2.5rem;
+}
+
+
+#title {
+    font-family: 'Pochita';
+    padding: 2px;
+    margin: 10px;
+
+    color: #F2E205;
+    text-align: center;
+    letter-spacing: 15PX;
+    
+}
+
+nav {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Chainsawz';
+    color: #D90452;
+}
+
+nav a:hover {
+    color: white;
+}
+
+#goal {
+    background: url(cover.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-top: 15px solid #D90452;
+    border-bottom: 15px solid #D90452;
+}
+
+#goal .container {
+    width: 50%;
+
+
+    padding: 15px;
+}
+
+#team h2 {
+    text-align: center;
+    margin: 25px 0px 15px 0px;
+}
+
+#img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#img-gallery .container {
+    background-color: white;
+    width: 45%;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+    border: 10px double gray;
+    border-radius: 30px;
+
+}
+
+
+#img-gallery img {
+    height: 80%;
+    object-fit: cover;
+    width: 80%;
+    margin: 15px;
+
+}
+
+
+#denji img {
+    border: 10px solid #F24E29;
+}
+
+#denji h3 {
+    color: #F24E29;
+}
+
+#power img {
+    border: 10px solid #F1216F;
+}
+
+#power h3 {
+    color: #F1216F;
+}
+
+#aki img {
+    border: 10px solid #293C73;
+}
+
+#aki h3 {
+    color: #293C73;
+}
+
+#makima img {
+    border: 10px solid red;
+}
+
+#makima h3 {
+    color: red;
+}
+
+/*Acomplishmnets*/
+#acomplishment {
+    background-color: white;
+    border-top: 8px double black;
+    height: auto;
+}
+
+#acomplishment h4,#acomplishment h3,#acomplishment p,#acomplishment h2{
+    font-family: 'Blambot Classic';
+    color: black;
+    text-shadow:none;
+    
+}
+
+#acomplishment .container{
+   display: flex;
+    padding: 10px;
+    width: 85%;
+    margin:auto;
+    height: auto;
+    justify-content: space-around;
+}
+
+
+#acomplishment .container  h4{
+    font-size: 1.8rem;
+}
+
+#acomplishment .container  p{
+    font-size:1.5rem;
+}
+
+
+#acomplishment .container .text{
+    width: 55%;
+}
+
+#acomplishment img {
+    border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
+    width: 20%;
+    height: auto;
+    border:1px solid black;
+    object-fit: cover;
+    margin:5px 15px;
+}
+
+/*
+#acomplishment img:nth-of-type(even){
+    float: right;
+    height: 90%;
+}
+
+#acomplishment img:nth-of-type(odd){
+    float: left;
+}*/
+
+/*media queries*/
+@media only screen and (max-width: 750px) {
+    nav {
+        width: 100%;
+    }
+
+   
+
+    #img-gallery {
+        flex-direction: column;
+
+    }
+
+    #img-gallery .container {
+        width: auto;
+    }
+
+    #goal {
+        height: auto;
+
+    }
+
+    
+
+    #acomplishment img {
+    border-radius: 0px;
+    }
+}
+
+@media screen and (max-width:930px) {
+    #acomplishment h2{
+        font-size: 3rem;
+        
+    }
+}
+
+@media screen  and (max-width:880px){
+    #acomplishment img {
+        border-radius: 0px;
+        width: 40%;
+        }
+}
