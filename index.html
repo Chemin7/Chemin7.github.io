@@ -6,20 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--<link rel="stylesheet" href="/websites/Chainsaw man/style.css">-->
     <title>Chemin</title>
 </head>
 
 <body>
     <nav>
-        <h1>Emanuel Vazquez</h1>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#prog-lang">Programming Languages</a></li>
-            <li><a href="#contact">Contact info</a></li>
-        </ul>
+            <h1>Emanuel Vazquez</h1>
+            <div id="myLinks">
+              <a href="#about-me">About Me</a>
+              <a href="#projects">Projects</a>
+              <a href="#skills">Skills</a>
+              <a href="#prog-lang">Programming Languages</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
     </nav>
     <main>
         <div id="about-me">
@@ -106,6 +111,18 @@
             </ul>
         </div>
     </main>
+
+    
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 
 </html>
